@@ -9,8 +9,8 @@
       </div>
 
       <div class="row">
-        <input class="input" v-model="encData"/>
-        <p>{{decryptedData}}</p>
+        <input class="input half-width" v-model="encData"/>
+        <p class="half-width break-word">{{decryptedData}}</p>
       </div>
     </div>
 </template>
@@ -47,5 +47,13 @@ export default {
 
   .input {
     width: 200px
+  }
+
+  .half-width {
+    width: 50%;
+  }
+
+  .break-word {
+    word-break: break-all;
   }
 </style>
